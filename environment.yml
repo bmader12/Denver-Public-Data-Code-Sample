@@ -1,0 +1,23 @@
+name: data_eng
+channels:
+  - conda-forge
+dependencies:
+  - wget
+  - numpy
+  - matplotlib
+  - pandas
+  - bokeh
+  - seaborn
+  - plotly
+  - sqlalchemy
+  - notebook>=5.2.2
+  - ipywidgets>=6.0.1
+  - ipython>=7.5.0
+  - scikit-image
+  - scikit-learn
+  - pip
+  - pip:
+    - pyspark>=3.0.0
+    - folium==0.11.0
+    - geopy==2.0.0
+    - nbconvert[webpdf]>=6.0.7
