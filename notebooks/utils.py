@@ -12,9 +12,7 @@ def read_remote_csv(zip_file_url: str, file_name: str) -> pd.DataFrame:
     remote_zip_file = urlopen(zip_file_url)
     zip_mem = BytesIO(remote_zip_file.read())
     zip_file = zipfile.ZipFile(zip_mem)
-    print("MASSIVE CHANGE HERE")
     return pd.read_csv(zip_file.open(file_name), encoding="ISO-8859-1", dtype=str)
-
 
 def clean_accidents_df(accidents_df: pd.DataFrame) -> pd.DataFrame:
     """
